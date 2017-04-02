@@ -6,9 +6,7 @@ jobs:
       - image: python:3.4.2
     steps:
       - checkout
-      - step:
+      - run:
         name: Install Dependencies
-        command: pip install -r reqquirements.txt
-      - step:
-        name: Python Test
-        command: py.test
+        command: echo "hoge"
+        # command: pip install -r reqquirements.txt
