@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: echo "hoge"
-      - run: pip install -r requirements.txt
-        # name: Install Dependencies
+      - run:
+        name: Install Dependencies
         # command: echo "hoge"
-        # command: pip install -r reqquirements.txt
+        command: pip install -r requirements.txt
