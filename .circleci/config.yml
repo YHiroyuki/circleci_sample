@@ -6,4 +6,9 @@ jobs:
       - image: python:3.4.2
     steps:
       - checkout
-      - run: echo "hello world"
+      - run:
+        name: "Install Dependencies"
+        command: pip install -r reqquirements.txt
+      - run:
+        name: "Python Test"
+        command: py.test
