@@ -7,8 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: "Install Dependencies"
+        name: Install Dependencies
         command: pip install -r reqquirements.txt
       - run:
-        name: "Python Test"
+        name: Python Test
         command: py.test
