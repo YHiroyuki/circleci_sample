@@ -8,6 +8,7 @@ jobs:
       - checkout
       - run: echo "hoge"
       - run: pip install -r requirements.txt
-        # name: Install Dependencies
-        # command: echo "hoge"
-        # command: pip install -r reqquirements.txt
+      - run:
+          name: FOO
+          command: |
+            echo "foo"
